@@ -9,7 +9,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview",
-    "start": "vite preview"
+    "start": "vite --port $PORT"
   },
   "dependencies": {
     "@emotion/react": "^11.7.1",
