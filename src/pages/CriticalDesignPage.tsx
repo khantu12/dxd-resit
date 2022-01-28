@@ -2,10 +2,8 @@ import React from 'react';
 import {
   Anchor,
   H2,
-  H3,
   Image,
   Main,
-  OrderedList,
   Paragraph,
   Title,
 } from '../Components/elements';
