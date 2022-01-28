@@ -4,7 +4,6 @@ import './App.css';
 import Nav from './Components/Nav';
 import HomePage from './pages/HomePage';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import 'react-medium-image-zoom/dist/styles.css';
 import CriticalDesignPage from './pages/CriticalDesignPage';
 import StoryCreationPage from './pages/StoryCreationPage';
 
