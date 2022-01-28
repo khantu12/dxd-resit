@@ -6,6 +6,7 @@ type SidebarProps = {
   onClose?: () => void;
   animation?: 'slide' | 'appear';
   hideOnDesktop?: boolean;
+  from?: 'left' | 'right';
 } & React.HTMLAttributes<HTMLDivElement>;
 
 const Sidebar: React.FC<SidebarProps> = ({
@@ -14,12 +15,16 @@ const Sidebar: React.FC<SidebarProps> = ({
   className,
   onClose,
   animation = 'slide',
+  from = 'left',
   hideOnDesktop = true,
 }) => {
   const appear: string = `${
     show ? 'opacity-100' : 'opacity-0 pointer-events-none'
   } w-full bg-black/80 backdrop-blur-sm`;
-  const slide: string = `${show ? 'translate-x-0' : '-translate-x-full'}`;
+  const slide: { [key in typeof from]: string } = {
+    left: `${show ? 'translate-x-0' : '-translate-x-full'}`,
+    right: `${show ? 'translate-x-0' : 'translate-x-full'} right-0`,
+  };
 
   const escFunction = useCallback((event) => {
     if (event.keyCode === 27) {
@@ -35,27 +40,25 @@ const Sidebar: React.FC<SidebarProps> = ({
     };
   }, []);
 
-  useEffect(() => {
-    if (animation !== 'appear') {
-      return;
-    }
+  // useEffect(() => {
+  //   if (animation !== 'appear') {
+  //     return;
+  //   }
 
-    if (show) {
-      document.body.classList.add('overflow-hidden');
-    } else {
-      document.body.classList.remove('overflow-hidden');
-    }
-  }, [show]);
+  // if (show) {
+  //   document.body.classList.add('overflow-hidden');
+  // } else {
+  //   document.body.classList.remove('overflow-hidden');
+  // }
+  // }, [show]);
 
   return (
     <>
       {animation === 'slide' && <Overlay onClick={onClose} show={show} />}
       <div
-        className={`${
-          animation === 'appear' ? appear : slide
-        } absolute p-10 py-13 flex flex-col z-20 ${
+        className={`${animation === 'appear' ? appear : slide[from]} ${
           hideOnDesktop && 'md:hidden'
-        } transition-translate ease-in-out duration-300 bg-black top-full text-teal-200 min-h-[calc(100vh-100%)] ${className}`}>
+        } top-0 fixed px-10 flex flex-col z-10 transition-translate ease-in-out duration-300 bg-black text-teal-200 min-h-full ${className}`}>
         {children}
       </div>
     </>

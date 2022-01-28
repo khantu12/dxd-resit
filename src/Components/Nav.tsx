@@ -33,31 +33,34 @@ const Nav = () => {
   ];
 
   return (
-    <div className="bg-black sticky top-0 z-10">
-      <div className="container flex items-center mx-auto px-4 py-1 md:px-6 md:py-3">
-        <Link
-          to="/"
-          activeClassName="no-underline"
-          onClick={() => setShowMenu(false)}
-          className="text-white font-semibold text-lg hover:text-black hover:bg-white duration-100 p-0 rounded-none ">
-          DXD Resit - Dimitar Dimitrov
-        </Link>
-        <div
-          onClick={() => toggleMenu()}
-          className="cursor-pointer w-10 h-10 relative ml-auto">
-          <MenuIcon
-            className={`${showMenu ? 'opacity-0' : 'opacity-100'} menu-icon`}
-          />
-          <XIcon
-            className={`${showMenu ? 'opacity-100' : 'opacity-0'} menu-icon`}
-          />
+    <>
+      <div className="bg-black sticky top-0 w-full z-20">
+        <div className="container flex items-center mx-auto px-4 py-1 md:px-6 md:py-3 z-30">
+          <Link
+            to="/"
+            activeClassName="no-underline"
+            onClick={() => setShowMenu(false)}
+            className="text-white font-semibold text-lg hover:text-black hover:bg-white duration-100 p-0 rounded-none ">
+            DXD Resit - Dimitar Dimitrov
+          </Link>
+          <div
+            onClick={() => toggleMenu()}
+            className="cursor-pointer w-10 h-10 relative ml-auto">
+            <MenuIcon
+              className={`${showMenu ? 'opacity-0' : 'opacity-100'} menu-icon`}
+            />
+            <XIcon
+              className={`${showMenu ? 'opacity-100' : 'opacity-0'} menu-icon`}
+            />
+          </div>
         </div>
       </div>
       <Sidebar
         className="flex justify-center items-center"
         show={showMenu}
         onClose={() => toggleMenu()}
-        animation="appear"
+        animation="slide"
+        from="right"
         hideOnDesktop={false}>
         <div className="mx-auto grid grid-cols-1 gap-5">
           {map(links, ({ href, title }) => (
@@ -75,7 +78,7 @@ const Nav = () => {
           ))}
         </div>
       </Sidebar>
-    </div>
+    </>
   );
 };
 
