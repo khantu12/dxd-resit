@@ -17,7 +17,7 @@ const CriticalDesign: React.FC<{}> = () => (
     <Paragraph>
       Anti-vaxxers are people that do not wish to vaccinate themselves for
       different reasons. Here is a document with my research and findings:{' '}
-      <Anchor href="https://docs.google.com/document/d/1ZHPAIHC1S-7-N3ooeOqNpQNlCsgMUqdYgeeiA81plWs/edit?usp=sharing">
+      <Anchor href="https://dxd-portfolio.herokuapp.com/critical-design">
         Critical Design Project
       </Anchor>
       . My own task is to give these people the chance to reconsider and think
@@ -89,7 +89,7 @@ const CriticalDesign: React.FC<{}> = () => (
       you want, can, or are capable of.
     </Paragraph>
     <Paragraph>This is what it looks like visualised.</Paragraph>
-    <Image src="/images/first_idea_cd.jpg" />
+    <Image src="/images/cd/first_idea_cd.jpg" />
     <Paragraph>
       This is the idea that I wanted to stick with since it looked interesting
       to me. I also had conversations with family and friends about this
@@ -113,7 +113,7 @@ const CriticalDesign: React.FC<{}> = () => (
       through it becomes a cube as it shows the covid-19 vaccine through an
       anti-vaxxer view. Again, the idea was not clear.
     </Paragraph>
-    <Image src="/images/sketch_2.jpg" />
+    <Image src="/images/cd/sketch_2.jpg" />
     <Paragraph>
       Then I thought of having the Covid-19 vaccine facts enter the
       anti-vaxxer’s head through the filter: “I believe what I want to believe
@@ -122,7 +122,7 @@ const CriticalDesign: React.FC<{}> = () => (
       completely different. Then the anti-vaxxer spits out this altered
       interpretation of the effects in their covid-19 vaccine test tube.
     </Paragraph>
-    <Image src="/images/sketch_3.jpg" />
+    <Image src="/images/cd/sketch_3.jpg" />
     <Paragraph>
       I really liked this idea. I shared it with family and friends to hear of
       their opinion by asking them various questions like:
@@ -138,7 +138,7 @@ const CriticalDesign: React.FC<{}> = () => (
       I drew a more refined version of the image and tried to eliminate these
       issues.
     </Paragraph>
-    <Image src="/images/final_result_1.jpg" />
+    <Image src="/images/cd/final_result_1.jpg" />
     <Paragraph>
       People now understood what was happening in the image a bit better. By
       some description from me they managed to also grasp what the idea and the
@@ -148,9 +148,9 @@ const CriticalDesign: React.FC<{}> = () => (
       the sphere stating what it represents)
     </Paragraph>
     <div className="flex gap-1">
-      <Image className="flex-1" src="/images/final_result_half.jpg" />
-      <Image className="flex-1" src="/images/final_result_quarter.jpg" />
-      <Image className="flex-1" src="/images/final_result_full.jpg" />
+      <Image className="flex-1" src="/images/cd/final_result_half.jpg" />
+      <Image className="flex-1" src="/images/cd/final_result_quarter.jpg" />
+      <Image className="flex-1" src="/images/cd/final_result_full.jpg" />
     </div>
     <Paragraph>
       I personally like the second image the best but having these variations
@@ -170,10 +170,10 @@ const CriticalDesign: React.FC<{}> = () => (
     </Paragraph>
 
     <H2>Result</H2>
-    <Image src="/images/final_result_full.jpg" />
+    <Image src="/images/cd/final_result_full.jpg" />
     <div className="flex gap-1">
-      <Image className="flex-1" src="/images/final_tshirt_mockup.png" />
-      <Image className="flex-1" src="/images/final_tshirt_mockup2.png" />
+      <Image className="flex-1" src="/images/cd/final_tshirt_mockup.png" />
+      <Image className="flex-1" src="/images/cd/final_tshirt_mockup2.png" />
     </div>
 
     <H2>Reflection</H2>
