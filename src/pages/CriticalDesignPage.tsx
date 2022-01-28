@@ -98,6 +98,7 @@ const CriticalDesign: React.FC<{}> = () => (
     </Paragraph>
 
     <H2>Result</H2>
+    <Paragraph>a</Paragraph>
 
     <H2>Reflection</H2>
     <Paragraph />
