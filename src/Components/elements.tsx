@@ -3,7 +3,6 @@ import {
   LazyLoadImage,
   LazyLoadImageProps,
 } from 'react-lazy-load-image-component';
-import Zoom from 'react-medium-image-zoom';
 
 type ReactComponent = React.FC<React.HTMLAttributes<HTMLParagraphElement>>;
 
