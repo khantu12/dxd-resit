@@ -2,9 +2,11 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Nav from './Components/Nav';
-import CarsPage from './pages/CriticalDesignPage';
 import HomePage from './pages/HomePage';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import 'react-medium-image-zoom/dist/styles.css';
+import CriticalDesignPage from './pages/CriticalDesignPage';
+import StoryCreationPage from './pages/StoryCreationPage';
 
 const App = () => {
   return (
@@ -12,7 +14,8 @@ const App = () => {
       <Nav />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/critical-design" element={<CarsPage />} />
+        <Route path="/critical-design" element={<CriticalDesignPage />} />
+        <Route path="/story-creation" element={<StoryCreationPage />} />
       </Routes>
     </div>
   );

@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   LazyLoadImage,
   LazyLoadImageProps,
 } from 'react-lazy-load-image-component';
+import Zoom from 'react-medium-image-zoom';
 
 type ReactComponent = React.FC<React.HTMLAttributes<HTMLParagraphElement>>;
 
@@ -48,13 +49,40 @@ const OrderedList: ReactComponent = ({ children, className }) => {
     </ol>
   );
 };
-const Image = ({ className, src }: LazyLoadImageProps) => {
+const Image = ({
+  className,
+  src,
+  zoom = false,
+}: LazyLoadImageProps & { zoom?: boolean }) => {
+  const [shouldZoom, setShouldZoom] = useState(false);
+  if (zoom) {
+    return (
+      <LazyLoadImage
+        effect="blur"
+        src={src}
+        onClick={() => {
+          setShouldZoom((prev) => !prev);
+        }}
+        wrapperClassName={`${shouldZoom && 'w-full left-0 absolute'}`}
+        className={`max-h-[80vh] mx-auto my-6 ${
+          shouldZoom ? 'cursor-zoom-out' : 'cursor-zoom-in'
+        } ${className}`}
+      />
+    );
+  }
   return (
     <LazyLoadImage
       effect="blur"
       src={src}
       className={`max-h-[80vh] mx-auto my-6 ${className}`}
     />
+  );
+};
+const ImageCaption: ReactComponent = ({ children, className }) => {
+  return (
+    <p className={`-mt-4 mb-6 text-gray-500 text-center italic ${className}`}>
+      {children}
+    </p>
   );
 };
 const Anchor: React.FC<
@@ -66,10 +94,21 @@ const Anchor: React.FC<
   return (
     <a
       {...props}
-      className={`font-medium border-b-2 border-orange-700 cursor-pointer hover:bg-orange-700 hover:text-white duration-200 ${className}`}>
+      className={`font-medium w-max border-b-2 border-orange-700 cursor-pointer hover:bg-orange-700 hover:text-white duration-200 ${className}`}>
       {children}
     </a>
   );
 };
 
-export { Main, Title, H1, H2, H3, Paragraph, OrderedList, Image, Anchor };
+export {
+  Main,
+  Title,
+  H1,
+  H2,
+  H3,
+  Paragraph,
+  OrderedList,
+  Image,
+  ImageCaption,
+  Anchor,
+};

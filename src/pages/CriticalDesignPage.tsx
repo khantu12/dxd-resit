@@ -9,7 +9,7 @@ import {
   Title,
 } from '../Components/elements';
 
-const CriticalDesign: React.FC<{}> = () => (
+const CriticalDesignPage: React.FC<{}> = () => (
   <Main>
     <Title>Critical Design</Title>
 
@@ -147,10 +147,13 @@ const CriticalDesign: React.FC<{}> = () => (
       variations (with text on the person's forehead, and one with text around
       the sphere stating what it represents)
     </Paragraph>
-    <div className="flex gap-1">
-      <Image className="flex-1" src="/images/cd/final_result_half.jpg" />
-      <Image className="flex-1" src="/images/cd/final_result_quarter.jpg" />
-      <Image className="flex-1" src="/images/cd/final_result_full.jpg" />
+    <div className="flex gap-1 my-6 flex-wrap md:flex-nowrap">
+      <Image className="flex-1 my-0" src="/images/cd/final_result_half.jpg" />
+      <Image
+        className="flex-1 my-0"
+        src="/images/cd/final_result_quarter.jpg"
+      />
+      <Image className="flex-1 my-0" src="/images/cd/final_result_full.jpg" />
     </div>
     <Paragraph>
       I personally like the second image the best but having these variations
@@ -171,9 +174,12 @@ const CriticalDesign: React.FC<{}> = () => (
 
     <H2>Result</H2>
     <Image src="/images/cd/final_result_full.jpg" />
-    <div className="flex gap-1">
-      <Image className="flex-1" src="/images/cd/final_tshirt_mockup.png" />
-      <Image className="flex-1" src="/images/cd/final_tshirt_mockup2.png" />
+    <div className="flex gap-1 my-6 flex-wrap md:flex-nowrap">
+      <Image className="flex-1 my-0" src="/images/cd/final_tshirt_mockup.png" />
+      <Image
+        className="flex-1 my-0"
+        src="/images/cd/final_tshirt_mockup2.png"
+      />
     </div>
 
     <H2>Reflection</H2>
@@ -181,4 +187,4 @@ const CriticalDesign: React.FC<{}> = () => (
   </Main>
 );
 
-export default CriticalDesign;
+export default CriticalDesignPage;

@@ -7,7 +7,7 @@ const Overlay: React.FC<
     {...props}
     className={`${
       !show && 'hidden'
-    } cursor-pointer absolute w-full h-[100vh] top-0 z-10`}
+    } cursor-pointer fixed w-full h-full top-0 z-10`}
   />
 );
 

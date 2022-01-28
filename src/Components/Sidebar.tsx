@@ -40,18 +40,6 @@ const Sidebar: React.FC<SidebarProps> = ({
     };
   }, []);
 
-  // useEffect(() => {
-  //   if (animation !== 'appear') {
-  //     return;
-  //   }
-
-  // if (show) {
-  //   document.body.classList.add('overflow-hidden');
-  // } else {
-  //   document.body.classList.remove('overflow-hidden');
-  // }
-  // }, [show]);
-
   return (
     <>
       {animation === 'slide' && <Overlay onClick={onClose} show={show} />}

@@ -67,7 +67,10 @@ const Nav = () => {
             <Link
               className="flex flex-col !text-left max-w-xs hover:bg-orange-700"
               activeClassName="bg-orange-800"
-              onClick={() => toggleMenu()}
+              onClick={() => {
+                toggleMenu();
+                window.scrollTo(0, 0);
+              }}
               key={href}
               to={href}>
               <div className="flex items-center justify-between">
