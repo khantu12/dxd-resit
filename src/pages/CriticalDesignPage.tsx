@@ -16,7 +16,6 @@ const CriticalDesign: React.FC<{}> = () => (
     <Paragraph>
       Anti-vaxxers are people that do not wish to vaccinate themselves for
       different reasons. Here is a document with my research and findings:{' '}
-      {'  '}
       <Anchor href="https://docs.google.com/document/d/1ZHPAIHC1S-7-N3ooeOqNpQNlCsgMUqdYgeeiA81plWs/edit?usp=sharing">
         Critical Design Project
       </Anchor>
