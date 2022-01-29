@@ -105,6 +105,7 @@ const Anchor: React.FC<
 > = ({ children, className, ...props }) => {
   return (
     <a
+      target="_blank"
       {...props}
       className={`font-medium w-max border-b-2 border-orange-700 cursor-pointer hover:bg-orange-700 hover:text-white duration-200 ${className}`}>
       {children}
