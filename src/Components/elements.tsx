@@ -3,6 +3,7 @@ import {
   LazyLoadImage,
   LazyLoadImageProps,
 } from 'react-lazy-load-image-component';
+import { useCurrentWidth } from 'react-breakpoints-hook';
 
 type ReactComponent = React.FC<React.HTMLAttributes<HTMLParagraphElement>>;
 
@@ -54,17 +55,29 @@ const Image = ({
   zoom = false,
 }: LazyLoadImageProps & { zoom?: boolean }) => {
   const [shouldZoom, setShouldZoom] = useState(false);
+  const [lastScroll, setLastScroll] = useState(0);
+  const currentWidth = useCurrentWidth();
   if (zoom) {
     return (
       <LazyLoadImage
         effect="blur"
         src={src}
         onClick={() => {
+          if (currentWidth < 768) {
+            return;
+          }
+
           setShouldZoom((prev) => !prev);
+          if (!shouldZoom) {
+            setLastScroll(window.scrollY);
+            window.scrollTo(0, 0);
+          } else {
+            window.scrollTo(0, lastScroll);
+          }
         }}
-        wrapperClassName={`${shouldZoom && 'w-full left-0 absolute'}`}
+        wrapperClassName={`${shouldZoom && 'md:w-full md:left-0 md:absolute'}`}
         className={`max-h-[80vh] mx-auto my-6 ${
-          shouldZoom ? 'cursor-zoom-out' : 'cursor-zoom-in'
+          shouldZoom ? 'md:cursor-zoom-out' : 'md:cursor-zoom-in'
         } ${className}`}
       />
     );

@@ -132,7 +132,7 @@ const StoryCreationPage: React.FC<{}> = () => (
     </ImageCaption>
 
     <H2>Result</H2>
-    <Paragraph className="italic text-center">
+    <Paragraph className="italic text-center hidden md:block">
       "You can click on the image to zoom"
     </Paragraph>
     <Image
