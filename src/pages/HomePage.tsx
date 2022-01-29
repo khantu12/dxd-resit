@@ -20,11 +20,13 @@ const HomeLink: React.FC<
 const HomePage = () => (
   <Main className="items-center">
     <Title>DXD Resit</Title>
-    <span className="font-semibold text-lg">Dimitar Dimitrov</span>
+    <span className="font-semibold text-xl text-orange-700 p-2 rounded-md border-orange-700">
+      Dimitar Dimitrov
+    </span>
 
     <div className="h-full flex flex-col w-full md:w-1/2 space-y-2 mt-20">
       {map(links, ({ href, title, icon }) => (
-        <HomeLink to={href}>
+        <HomeLink key={href} to={href}>
           {icon}
           <span>{title}</span>
           <ArrowRightIcon className="!ml-auto w-5 h-5 flex-shrink-0" />

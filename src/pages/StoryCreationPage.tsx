@@ -62,13 +62,6 @@ const StoryCreationPage: React.FC<{}> = () => (
       The image is a bit cleaner now and the details are a bit more refined.
     </Paragraph>
     <Paragraph>
-      Then I started drawing more images that capture the most important parts
-      of the story, that are either emotionally capturing or have a big impact
-      on the story progression. I chose to draw the moment when Rik finds out
-      that his father passes away, the moment where he protects his PhD, and
-      when Kolin uses his algorithm to build the first AI.
-    </Paragraph>
-    <Paragraph>
       To write a more interesting second part of the story (after The Fall), I
       thought of some other motives and events that could contribute to the end.
       More specifically I thought of adding those after his attempt to get

@@ -44,7 +44,7 @@ const Nav = () => {
             to="/"
             activeClassName="no-underline"
             onClick={() => setShowMenu(false)}
-            className="text-white font-semibold text-lg hover:text-black hover:bg-white duration-100 p-0 rounded-none ">
+            className="text-white font-semibold text-lg hover:bg-orange-700 rounded-md duration-75 py-1 px-2">
             DXD Resit - Dimitar Dimitrov
           </Link>
           <div
@@ -77,7 +77,7 @@ const Nav = () => {
               }}
               key={href}
               to={href}>
-              <div className="flex items-center">
+              <div className="flex items-center pr-5">
                 {icon}
                 <span className="ml-3">{title}</span>
               </div>
