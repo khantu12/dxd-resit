@@ -1,8 +1,33 @@
 import React, { useState } from 'react';
-import { MenuIcon, XIcon, ArrowRightIcon } from '@heroicons/react/outline';
+import {
+  MenuIcon,
+  XIcon,
+  ArrowRightIcon,
+  BeakerIcon,
+  BookOpenIcon,
+  EyeIcon,
+} from '@heroicons/react/outline';
 import { map } from 'lodash';
 import Link from './Link';
 import Sidebar from './Sidebar';
+
+const links = [
+  {
+    href: '/critical-design',
+    title: 'Critical Design',
+    icon: <BeakerIcon className="h-5 w-5 shrink-0" />,
+  },
+  {
+    href: '/story-creation',
+    title: 'Story Creation',
+    icon: <BookOpenIcon className="h-5 w-5 shrink-0" />,
+  },
+  {
+    href: '/media-theory',
+    title: 'Media Theory',
+    icon: <EyeIcon className="h-5 w-5 shrink-0" />,
+  },
+];
 
 const Nav = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -10,27 +35,6 @@ const Nav = () => {
   const toggleMenu = () => {
     setShowMenu((prev) => !prev);
   };
-
-  const links = [
-    {
-      href: '/critical-design',
-      title: 'Critical Design',
-      description:
-        'The Critical Design course is focused on turning a topic into an idea and an idea into a concept.',
-    },
-    {
-      href: '/media-theory',
-      title: 'Media Theory',
-      description:
-        'The Media Theory course teaches how the media works, the different mediums, how and when to use each of the mediums.',
-    },
-    {
-      href: '/story-creation',
-      title: 'Story Creation',
-      description:
-        'The Story Creation class focuses on how to communicate and create an amazing story that is built upon emotion, motive, characters and events.',
-    },
-  ];
 
   return (
     <>
@@ -56,16 +60,16 @@ const Nav = () => {
         </div>
       </div>
       <Sidebar
-        className="flex justify-center items-center"
+        className="flex py-28 items-center"
         show={showMenu}
         onClose={() => toggleMenu()}
         animation="slide"
         from="right"
         hideOnDesktop={false}>
         <div className="mx-auto grid grid-cols-1 gap-5">
-          {map(links, ({ href, title }) => (
+          {map(links, ({ href, title, icon }) => (
             <Link
-              className="flex flex-col !text-left max-w-xs hover:bg-orange-700"
+              className="flex items-center justify-between max-w-xs hover:bg-orange-700"
               activeClassName="bg-orange-800"
               onClick={() => {
                 toggleMenu();
@@ -73,10 +77,11 @@ const Nav = () => {
               }}
               key={href}
               to={href}>
-              <div className="flex items-center justify-between">
-                <span className="">{title}</span>
-                <ArrowRightIcon className="ml-3 w-5 h-5 flex-shrink-0" />
+              <div className="flex items-center">
+                {icon}
+                <span className="ml-3">{title}</span>
               </div>
+              <ArrowRightIcon className="ml-3 w-5 h-5 flex-shrink-0" />
             </Link>
           ))}
         </div>
@@ -84,5 +89,7 @@ const Nav = () => {
     </>
   );
 };
+
+export { links };
 
 export default Nav;
