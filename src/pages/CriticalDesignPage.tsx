@@ -134,9 +134,16 @@ const CriticalDesignPage: React.FC<{}> = () => (
     </OrderedList>
     <Paragraph>
       I got mixed answers. Some did not understand what was happening in the
-      image at all. Others understood what the image is but not the message. So
-      I drew a more refined version of the image and tried to eliminate these
-      issues.
+      image at all. Others understood what the image is but not the message.
+    </Paragraph>
+    <Paragraph>
+      Then I created a prototype that I can interact with and better visualise
+      how this idea would look like.
+    </Paragraph>
+    <Image src="/images/cd/prototype.jpg" />
+    <Paragraph>
+      Then I drew a more refined version of the image and tried to eliminate
+      these issues.
     </Paragraph>
     <Image src="/images/cd/final_result_1.jpg" />
     <Paragraph>
