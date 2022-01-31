@@ -69,21 +69,53 @@ const MediaTheoryPage: React.FC<{}> = () => (
       story to be developing in the past. It was mainly expired by "The
       Imitation Game" and "Lost in space". I also wanted my story to be mainly
       sad, moody, and at the same time seem like that is hope to the whole
-      thing.
+      thing. I followed my intuition but I was constantly asking myself
+      questions about the plots and motives of the story as I was writing it.
     </Paragraph>
 
     <H3>Ministry of Social Affairs and Employment</H3>
-    <Paragraph>In the Critical Design project I </Paragraph>
+    <Paragraph>
+      In this project I started by studying the issue and finding the root of
+      it. I think the best way to handle an issue is to uproot it. Finding the
+      cause of issue and getting rid of it (or in this case raising awareness
+      about it).
+    </Paragraph>
+    <Paragraph>
+      During the whole process I was asking myself various questions: "How can I
+      handle the bully?", "What message can I send?", "What would have the most
+      impact?", "What idea could be interesting to develop or take in?". This
+      helped me shape the poster I have created. Finally, we chose that one
+      because it had the most impact when we were testing the posters with
+      users.
+    </Paragraph>
 
     <H3>Vega Collaboration Project</H3>
-    <Paragraph>In the Critical Design project I </Paragraph>
+    <Paragraph>
+      In this project I opposed my team with questions as much as I can. Because
+      some decisions were almost to be made without any validation or second
+      thought. In all of my work I like to think critically and take the best
+      decisions. For example, when we had to make a decision about the story and
+      the characters, my team was really excited about a certain idea but I came
+      in with a constructive criticism opposition that made my team take a step
+      back and reevaluate our decision. We tried to stick with our gut so that
+      everybody is happy but we did not forget to ask ourselves questions and
+      seek feedback. Iterate and improve.
+    </Paragraph>
 
     <H3>Company Project - Additive Industries</H3>
-    <Paragraph>In the Critical Design project I </Paragraph>
-
-    <H2>Result</H2>
-
-    <H2>Reflection</H2>
+    <Paragraph>
+      For the Additive Industries project, in the first iteration of the design
+      of the application I wanted to add distinction between the different
+      industries. "What could this distinction be?" I asked myself. First I
+      thought of adding icons for each industry which was a great idea but my
+      intuition led me to choosing to identify the industries by color. When the
+      industry is chosen we continue to indicate on the overview with the color
+      of the industry. Now I asked myself "Is this a good solution? Is it a
+      solution that would be intuitive or helpful for the user?". We have
+      consulted with our mentor for the company project and they liked that the
+      industries were color coded and they and the client suggested that icons
+      could also be included to further aid the user.
+    </Paragraph>
   </Main>
 );
 

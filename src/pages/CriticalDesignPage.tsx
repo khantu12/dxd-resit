@@ -82,11 +82,11 @@ const CriticalDesignPage: React.FC<{}> = () => (
       something that may convey the message better.
     </Paragraph>
     <Paragraph>
-      Then I thought of a game for children where they have a board with
-      different shaped holes. A variation of that is that if you put the right
-      object through the wrong hole, the object takes the shape of the hole. The
-      vision of this is: you are given one information but you interpret it as
-      you want, can, or are capable of.
+      Then I thought of that game for children (Shape Sorter) where they have a
+      board with different shaped holes. A variation of that is that if you put
+      the right object through the wrong hole, the object takes the shape of the
+      hole. The vision of this is: you are given one information but you
+      interpret it as you want, can, or are capable of.
     </Paragraph>
     <Paragraph>This is what it looks like visualised.</Paragraph>
     <Image src="/images/cd/first_idea_cd.jpg" />
@@ -171,6 +171,11 @@ const CriticalDesignPage: React.FC<{}> = () => (
       coincidence I did not think of but it turned out great. I agree with the
       users and that is what I have chosen as my result.
     </Paragraph>
+    <Paragraph>
+      With this design I hope I do not offend any anti-vaxxers and try to show
+      them that they ignore the facts or have false information about the
+      COVID-19 vaccine.
+    </Paragraph>
 
     <H2>Result</H2>
     <Image src="/images/cd/final_result_full.jpg" />
@@ -183,7 +188,39 @@ const CriticalDesignPage: React.FC<{}> = () => (
     </div>
 
     <H2>Reflection</H2>
-    <Paragraph />
+    <Paragraph>
+      I think this iteration was successful. Compared to last iteration, with
+      this one, I tried to dig deeper into the root of the problem. Trying to
+      find out "Where did the hear / read that the vaccine has such side
+      effects?", "What is actually the problem?". By asking myself these
+      questions I think I found out what the problem is. Misinformation and
+      ignorance of the facts. That is why I wanted to rase awareness that the
+      anti-vaxxers are ignoring the facts or reshaping them so that they fit
+      their understanding/view. But what shapes their understanding and view is
+      the misinformation and personal theories.
+    </Paragraph>
+    <Paragraph>
+      That led me to the idea of "You believe what you want to believe". I liked
+      it, it made sense to me, so that I why I went with that. I started to
+      further develop this idea by trying to represent this with a design.
+      First, a children toy called "Shape Sorter". Then, a test tube that has
+      the same idea. And finally, after some more developing, mental imaging and
+      thinking, I thought of the anti-vaxxers filter of information and spitting
+      out their representation of the vaccine.
+    </Paragraph>
+    <Paragraph>
+      The user testing also greatly helped me shape my final design better and
+      also made me learn some stuff that I did not think of before. With this
+      iteration I tried to get constant feedback on my progress from users so I
+      can validate that I am going in the right direction and my design works.
+    </Paragraph>
+    <Paragraph>
+      For the next iteration I will evaluate my current approach, research, and
+      decisions. Based on that I might want to take in another direction that
+      could maybe be "Why do people post or trust misinformation?" or "What
+      makes us not trust science?". These are question I would love to develop
+      further.
+    </Paragraph>
   </Main>
 );
 
