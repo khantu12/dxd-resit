@@ -101,7 +101,7 @@ const StoryCreationPage: React.FC<{}> = () => (
       on the streets. Some time passes and he realises he has to do something
       with his life and continues living a humble life, working in a non-profit
       animal shelter until the end of his life. I called the chapter{' '}
-      <b>&quotThe Final Blow&quot</b>
+      <b>&quot;The Final Blow&quot;</b>
     </Paragraph>
     <Paragraph>
       I also drew some more drawings. First row is the process and sketches I
@@ -127,7 +127,7 @@ const StoryCreationPage: React.FC<{}> = () => (
 
     <H2>Result</H2>
     <Paragraph className="italic text-center hidden md:block">
-      &quotYou can click on the image to zoom&quot
+      &quot;You can click on the image to zoom&quot;
     </Paragraph>
     <Image
       zoom
