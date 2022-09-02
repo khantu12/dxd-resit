@@ -8,6 +8,7 @@ import {
   EyeIcon,
 } from '@heroicons/react/outline';
 import { map } from 'lodash';
+import { twMerge } from 'tailwind-merge';
 import Link from './Link';
 import Sidebar from './Sidebar';
 
@@ -51,10 +52,16 @@ const Nav = () => {
             onClick={() => toggleMenu()}
             className="cursor-pointer w-10 h-10 relative ml-auto">
             <MenuIcon
-              className={`${showMenu ? 'opacity-0' : 'opacity-100'} menu-icon`}
+              className={twMerge(
+                showMenu ? 'opacity-0' : 'opacity-100',
+                'menu-icon',
+              )}
             />
             <XIcon
-              className={`${showMenu ? 'opacity-100' : 'opacity-0'} menu-icon`}
+              className={twMerge(
+                showMenu ? 'opacity-100' : 'opacity-0',
+                'menu-icon',
+              )}
             />
           </div>
         </div>

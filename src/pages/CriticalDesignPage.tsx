@@ -72,7 +72,7 @@ const CriticalDesignPage: React.FC<{}> = () => (
       and on the right the scientist that has invented the vaccine explaining
       why the other person should consider getting it. The message is that the
       anti-vaxxers ignore and do not believe the scientists, the professionals,
-      the science. But the scientist's job and the science is to progress
+      the science. But the scientist&apos;s job and the science is to progress
       forward and help humankind.
     </Paragraph>
     <Paragraph>
@@ -104,8 +104,8 @@ const CriticalDesignPage: React.FC<{}> = () => (
       syringe from the previous iteration and put inside cubes. When these cubes
       get pushed through, spheres will pop out.This idea sounded good at first
       but after some critical thinking I threw away this idea. It does not
-      really make sense. The idea of the design won’t be as clear as I would
-      want it to.
+      really make sense. The idea of the design won&apos;t be as clear as I
+      would want it to.
     </Paragraph>
     <Paragraph>
       Some other ideas came into mind like having the cap of an Covid-19 vaccine
@@ -116,11 +116,11 @@ const CriticalDesignPage: React.FC<{}> = () => (
     <Image src="/images/cd/sketch_2.jpg" />
     <Paragraph>
       Then I thought of having the Covid-19 vaccine facts enter the
-      anti-vaxxer’s head through the filter: “I believe what I want to believe
-      that has also been shaped by the opinion of other people and theorists.
-      Going through this filter the facts become interpretation or something
-      completely different. Then the anti-vaxxer spits out this altered
-      interpretation of the effects in their covid-19 vaccine test tube.
+      anti-vaxxer&apos;s head through the filter: “I believe what I want to
+      believe that has also been shaped by the opinion of other people and
+      theorists. Going through this filter the facts become interpretation or
+      something completely different. Then the anti-vaxxer spits out this
+      altered interpretation of the effects in their covid-19 vaccine test tube.
     </Paragraph>
     <Image src="/images/cd/sketch_3.jpg" />
     <Paragraph>
@@ -151,8 +151,8 @@ const CriticalDesignPage: React.FC<{}> = () => (
       some description from me they managed to also grasp what the idea and the
       meaning of this image is. I want to take out the oral description in order
       to understand the design. So I made a cleaner version and also drew some
-      variations (with text on the person's forehead, and one with text around
-      the sphere stating what it represents)
+      variations (with text on the person&apos;s forehead, and one with text
+      around the sphere stating what it represents)
     </Paragraph>
     <div className="flex gap-1 my-6 flex-wrap md:flex-nowrap">
       <Image className="flex-1 my-0" src="/images/cd/final_result_half.jpg" />
@@ -198,22 +198,23 @@ const CriticalDesignPage: React.FC<{}> = () => (
     <Paragraph>
       I think this iteration was successful. Compared to last iteration, with
       this one, I tried to dig deeper into the root of the problem. Trying to
-      find out "Where did the hear / read that the vaccine has such side
-      effects?", "What is actually the problem?". By asking myself these
-      questions I think I found out what the problem is. Misinformation and
-      ignorance of the facts. That is why I wanted to rase awareness that the
-      anti-vaxxers are ignoring the facts or reshaping them so that they fit
-      their understanding/view. But what shapes their understanding and view is
-      the misinformation and personal theories.
+      find out &quot;Where did the hear / read that the vaccine has such side
+      effects?&quot;, &quot;What is actually the problem?&quot;. By asking
+      myself these questions I think I found out what the problem is.
+      Misinformation and ignorance of the facts. That is why I wanted to rase
+      awareness that the anti-vaxxers are ignoring the facts or reshaping them
+      so that they fit their understanding/view. But what shapes their
+      understanding and view is the misinformation and personal theories.
     </Paragraph>
     <Paragraph>
-      That led me to the idea of "You believe what you want to believe". I liked
-      it, it made sense to me, so that I why I went with that. I started to
-      further develop this idea by trying to represent this with a design.
-      First, a children toy called "Shape Sorter". Then, a test tube that has
-      the same idea. And finally, after some more developing, mental imaging and
-      thinking, I thought of the anti-vaxxers filter of information and spitting
-      out their representation of the vaccine.
+      That led me to the idea of &quot;You believe what you want to
+      believe&quot;. I liked it, it made sense to me, so that I why I went with
+      that. I started to further develop this idea by trying to represent this
+      with a design. First, a children toy called &quot;Shape Sorter&quot;.
+      Then, a test tube that has the same idea. And finally, after some more
+      developing, mental imaging and thinking, I thought of the anti-vaxxers
+      filter of information and spitting out their representation of the
+      vaccine.
     </Paragraph>
     <Paragraph>
       The user testing also greatly helped me shape my final design better and
@@ -224,9 +225,9 @@ const CriticalDesignPage: React.FC<{}> = () => (
     <Paragraph>
       For the next iteration I will evaluate my current approach, research, and
       decisions. Based on that I might want to take in another direction that
-      could maybe be "Why do people post or trust misinformation?" or "What
-      makes us not trust science?". These are question I would love to develop
-      further.
+      could maybe be &quot;Why do people post or trust misinformation?&quot; or
+      &quot;What makes us not trust science?&quot;. These are question I would
+      love to develop further.
     </Paragraph>
   </Main>
 );

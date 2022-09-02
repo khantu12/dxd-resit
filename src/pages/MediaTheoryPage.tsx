@@ -63,14 +63,15 @@ const MediaTheoryPage: React.FC<{}> = () => (
       young age. Building and inventing are tightly integrated in my story.
     </Paragraph>
     <Paragraph>
-      I asked myself "What could my story be about? What are the motives of the
-      main character? How does the main character progress through the story?
-      What are their feelings?". From the beginning I knew that I wanted my
-      story to be developing in the past. It was mainly expired by "The
-      Imitation Game" and "Lost in space". I also wanted my story to be mainly
-      sad, moody, and at the same time seem like that is hope to the whole
-      thing. I followed my intuition but I was constantly asking myself
-      questions about the plots and motives of the story as I was writing it.
+      I asked myself &quot;What could my story be about? What are the motives of
+      the main character? How does the main character progress through the
+      story? What are their feelings?&quot;. From the beginning I knew that I
+      wanted my story to be developing in the past. It was mainly expired by
+      &quot;The Imitation Game&quot; and &quot;Lost in space&quot;. I also
+      wanted my story to be mainly sad, moody, and at the same time seem like
+      that is hope to the whole thing. I followed my intuition but I was
+      constantly asking myself questions about the plots and motives of the
+      story as I was writing it.
     </Paragraph>
 
     <H3>Ministry of Social Affairs and Employment</H3>
@@ -81,12 +82,12 @@ const MediaTheoryPage: React.FC<{}> = () => (
       about it).
     </Paragraph>
     <Paragraph>
-      During the whole process I was asking myself various questions: "How can I
-      handle the bully?", "What message can I send?", "What would have the most
-      impact?", "What idea could be interesting to develop or take in?". This
-      helped me shape the poster I have created. Finally, we chose that one
-      because it had the most impact when we were testing the posters with
-      users.
+      During the whole process I was asking myself various questions: &quot;How
+      can I handle the bully?&quot;, &quot;What message can I send?&quot;,
+      &quot;What would have the most impact?&quot;, &quot;What idea could be
+      interesting to develop or take in?&quot;. This helped me shape the poster
+      I have created. Finally, we chose that one because it had the most impact
+      when we were testing the posters with users.
     </Paragraph>
 
     <H3>Vega Collaboration Project</H3>
@@ -106,15 +107,15 @@ const MediaTheoryPage: React.FC<{}> = () => (
     <Paragraph>
       For the Additive Industries project, in the first iteration of the design
       of the application I wanted to add distinction between the different
-      industries. "What could this distinction be?" I asked myself. First I
-      thought of adding icons for each industry which was a great idea but my
-      intuition led me to choosing to identify the industries by color. When the
-      industry is chosen we continue to indicate on the overview with the color
-      of the industry. Now I asked myself "Is this a good solution? Is it a
-      solution that would be intuitive or helpful for the user?". We have
-      consulted with our mentor for the company project and they liked that the
-      industries were color coded and they and the client suggested that icons
-      could also be included to further aid the user.
+      industries. &quot;What could this distinction be?&quot; I asked myself.
+      First I thought of adding icons for each industry which was a great idea
+      but my intuition led me to choosing to identify the industries by color.
+      When the industry is chosen we continue to indicate on the overview with
+      the color of the industry. Now I asked myself &quot;Is this a good
+      solution? Is it a solution that would be intuitive or helpful for the
+      user?&quot;. We have consulted with our mentor for the company project and
+      they liked that the industries were color coded and they and the client
+      suggested that icons could also be included to further aid the user.
     </Paragraph>
   </Main>
 );

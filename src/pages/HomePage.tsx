@@ -2,6 +2,7 @@ import { ArrowRightIcon } from '@heroicons/react/outline';
 import { map } from 'lodash';
 import React from 'react';
 import { NavLink, NavLinkProps } from 'react-router-dom';
+import { twMerge } from 'tailwind-merge';
 import { Title, Main } from '../Components/elements';
 import { links } from '../Components/Nav';
 
@@ -11,7 +12,10 @@ const HomeLink: React.FC<
   return (
     <NavLink
       to={to}
-      className={`flex space-x-5 items-center rounded-lg hover:bg-orange-700 hover:text-white duration-75 p-5 ${className}`}>
+      className={twMerge(
+        'flex space-x-5 items-center rounded-lg hover:bg-orange-700 hover:text-white duration-75 p-5',
+        className as string | undefined,
+      )}>
       {children}
     </NavLink>
   );

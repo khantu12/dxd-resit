@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect } from 'react';
+import { twMerge } from 'tailwind-merge';
 import Overlay from './Overlay';
 
 type SidebarProps = {
@@ -18,12 +19,13 @@ const Sidebar: React.FC<SidebarProps> = ({
   from = 'left',
   hideOnDesktop = true,
 }) => {
-  const appear: string = `${
-    show ? 'opacity-100' : 'opacity-0 pointer-events-none'
-  } w-full bg-black/80 backdrop-blur-sm`;
+  const appear: string = twMerge(
+    show ? 'opacity-100' : 'opacity-0 pointer-events-none',
+    'w-full bg-black/80 backdrop-blur-sm',
+  );
   const slide: { [key in typeof from]: string } = {
-    left: `${show ? 'translate-x-0' : '-translate-x-full'}`,
-    right: `${show ? 'translate-x-0' : 'translate-x-full'} right-0`,
+    left: show ? 'translate-x-0' : '-translate-x-full',
+    right: twMerge(show ? 'translate-x-0' : 'translate-x-full', 'right-0'),
   };
 
   const escFunction = useCallback((event) => {
@@ -44,9 +46,12 @@ const Sidebar: React.FC<SidebarProps> = ({
     <>
       {animation === 'slide' && <Overlay onClick={onClose} show={show} />}
       <div
-        className={`${animation === 'appear' ? appear : slide[from]} ${
-          hideOnDesktop && 'md:hidden'
-        } top-0 fixed px-10 flex flex-col z-10 transition-translate ease-in-out duration-300 bg-black text-teal-200 min-h-full ${className}`}>
+        className={twMerge(
+          animation === 'appear' ? appear : slide[from],
+          hideOnDesktop && 'md:hidden',
+          'top-0 fixed px-10 flex flex-col z-10 transition-translate ease-in-out duration-300 bg-black text-teal-200 min-h-full',
+          className,
+        )}>
         {children}
       </div>
     </>

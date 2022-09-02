@@ -28,9 +28,10 @@ const StoryCreationPage: React.FC<{}> = () => (
       Rik wishes he gets a scholarship to help fund the realisation of his
       project. Nobody sees a use in his machine friend. Everything goes downhill
       for him from this point on. Rik started living a bitter life and passed
-      away 10 years after. In 2030 a researcher finds Rick’s research and finds
-      out that it is revolutionary. Rik has been included in the school books as
-      the father of the algorithmic concept for the first conscious being.
+      away 10 years after. In 2030 a researcher finds Rick&apos;s research and
+      finds out that it is revolutionary. Rik has been included in the school
+      books as the father of the algorithmic concept for the first conscious
+      being.
     </Paragraph>
 
     <H2>Task</H2>
@@ -100,7 +101,7 @@ const StoryCreationPage: React.FC<{}> = () => (
       on the streets. Some time passes and he realises he has to do something
       with his life and continues living a humble life, working in a non-profit
       animal shelter until the end of his life. I called the chapter{' '}
-      <b>"The Final Blow"</b>
+      <b>&quotThe Final Blow&quot</b>
     </Paragraph>
     <Paragraph>
       I also drew some more drawings. First row is the process and sketches I
@@ -117,16 +118,16 @@ const StoryCreationPage: React.FC<{}> = () => (
       In the first image, Rik, during his second year in university, finds out
       that his father has passed away by the letter on the floor and is crying
       on the bed. We have the robot in the foreground to also give a hint of
-      Rik’s dream and it will be affected by this event. In the second image,
-      Rik is defending his PhD. He is explaining how his algorithm works, how it
-      interacts with the robot, and writing mathematical equations. He has also
-      brought the robot on the stage to give more impact by showing something
-      physical, something that the jury can touch and feel.
+      Rik&apos;s dream and it will be affected by this event. In the second
+      image, Rik is defending his PhD. He is explaining how his algorithm works,
+      how it interacts with the robot, and writing mathematical equations. He
+      has also brought the robot on the stage to give more impact by showing
+      something physical, something that the jury can touch and feel.
     </ImageCaption>
 
     <H2>Result</H2>
     <Paragraph className="italic text-center hidden md:block">
-      "You can click on the image to zoom"
+      &quotYou can click on the image to zoom&quot
     </Paragraph>
     <Image
       zoom

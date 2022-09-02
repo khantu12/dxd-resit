@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink, NavLinkProps } from 'react-router-dom';
+import { twMerge } from 'tailwind-merge';
 
 const Link: React.FC<
   NavLinkProps &
@@ -10,9 +11,12 @@ const Link: React.FC<
   <NavLink
     {...props}
     className={({ isActive }) =>
-      `${className} p-3 text-center select-none ${
-        isActive && (activeClassName || 'underline')
-      } cursor-pointer rounded-lg font-semibold text-white transition-colors ease-in-out duration-75 `
+      twMerge(
+        'p-3 text-center select-none',
+        isActive && (activeClassName || 'underline'),
+        'cursor-pointer rounded-lg font-semibold text-white transition-colors ease-in-out duration-75',
+        className as string | undefined,
+      )
     }>
     {children}
   </NavLink>

@@ -4,47 +4,63 @@ import {
   LazyLoadImageProps,
 } from 'react-lazy-load-image-component';
 import { useCurrentWidth } from 'react-breakpoints-hook';
+import { twMerge } from 'tailwind-merge';
 
 type ReactComponent = React.FC<React.HTMLAttributes<HTMLParagraphElement>>;
 
 const Main: ReactComponent = ({ children, className }) => {
   return (
     <main
-      className={`mx-auto max-w-3xl px-5 sm:px-20 flex flex-col my-12 ${className}`}>
+      className={twMerge(
+        'mx-auto max-w-3xl px-5 sm:px-20 flex flex-col my-12',
+        className,
+      )}>
       {children}
     </main>
   );
 };
 const H1: ReactComponent = ({ children, className }) => {
-  return <h1 className={`text-4xl font-bold mb-2 ${className}`}>{children}</h1>;
+  return (
+    <h1 className={twMerge('text-4xl font-bold mb-2', className)}>
+      {children}
+    </h1>
+  );
 };
 const Title: ReactComponent = ({ children, className }) => {
   return (
-    <H1 className={`text-center mb-8 tracking-wide ${className}`}>
+    <H1 className={twMerge('text-center mb-8 tracking-wide', className)}>
       {children}
     </H1>
   );
 };
 const H2: ReactComponent = ({ children, className }) => {
   return (
-    <h2 className={`text-2xl font-semibold mt-5 mb-2 ${className}`}>
+    <h2 className={twMerge('text-2xl font-semibold mt-5 mb-2', className)}>
       {children}
     </h2>
   );
 };
 const H3: ReactComponent = ({ children, className }) => {
   return (
-    <h3 className={`text-xl font-medium mt-4 mb-2 ${className}`}>{children}</h3>
+    <h3 className={twMerge('text-xl font-medium mt-4 mb-2', className)}>
+      {children}
+    </h3>
   );
 };
 const Paragraph: ReactComponent = ({ children, className }) => {
   return (
-    <p className={`text-base font-normal my-2 ${className}`}>{children}</p>
+    <p className={twMerge('text-base font-normal my-2', className)}>
+      {children}
+    </p>
   );
 };
 const OrderedList: ReactComponent = ({ children, className }) => {
   return (
-    <ol className={`list-disc flex flex-col space-y-1 ml-10 my-2 ${className}`}>
+    <ol
+      className={twMerge(
+        'list-disc flex flex-col space-y-1 ml-10 my-2',
+        className,
+      )}>
       {children}
     </ol>
   );
@@ -75,10 +91,14 @@ const Image = ({
             window.scrollTo(0, lastScroll);
           }
         }}
-        wrapperClassName={`${shouldZoom && 'md:w-full md:left-0 md:absolute'}`}
-        className={`max-h-[80vh] mx-auto my-6 ${
-          shouldZoom ? 'md:cursor-zoom-out' : 'md:cursor-zoom-in'
-        } ${className}`}
+        wrapperClassName={twMerge(
+          shouldZoom && 'md:w-full md:left-0 md:absolute',
+        )}
+        className={twMerge(
+          'max-h-[80vh] mx-auto my-6',
+          shouldZoom ? 'md:cursor-zoom-out' : 'md:cursor-zoom-in',
+          className,
+        )}
       />
     );
   }
@@ -86,13 +106,17 @@ const Image = ({
     <LazyLoadImage
       effect="blur"
       src={src}
-      className={`max-h-[80vh] mx-auto my-6 ${className}`}
+      className={twMerge('max-h-[80vh] mx-auto my-6', className)}
     />
   );
 };
 const ImageCaption: ReactComponent = ({ children, className }) => {
   return (
-    <p className={`-mt-4 mb-6 text-gray-500 text-center italic ${className}`}>
+    <p
+      className={twMerge(
+        '-mt-4 mb-6 text-gray-500 text-center italic',
+        className,
+      )}>
       {children}
     </p>
   );
@@ -107,7 +131,10 @@ const Anchor: React.FC<
     <a
       target="_blank"
       {...props}
-      className={`font-medium w-max border-b-2 border-orange-700 cursor-pointer hover:bg-orange-700 hover:text-white duration-200 ${className}`}>
+      className={twMerge(
+        'font-medium w-max border-b-2 border-orange-700 cursor-pointer hover:bg-orange-700 hover:text-white duration-200',
+        className,
+      )}>
       {children}
     </a>
   );
